@@ -30,6 +30,19 @@ st.markdown(
     """
     <style>
 
+    header[data-testid="stHeader"] {
+    display: none;
+    }
+
+    .block-container {
+    padding-top: 0rem;
+    }
+
+    [data-testid="stSidebar"] {
+    min-width: 580px;
+    max-width: 580px;
+    }
+
     .stApp {
         background-color: #081018;
     }
