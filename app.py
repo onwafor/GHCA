@@ -39,8 +39,8 @@ st.markdown(
     }
 
     [data-testid="stSidebar"] {
-    min-width: 580px;
-    max-width: 580px;
+    min-width: 680px;
+    max-width: 780px;
     }
 
     .stApp {
@@ -383,7 +383,7 @@ prediction = model.predict(X_input)[0]
 proba = model.predict_proba(X_input)[0]
 confidence = np.max(proba) * 100
 
-colR1, colR2 = st.columns([2,3])
+colR1, colR2 = st.columns([1,3])
 
 # =====================================================
 # LEFT PANEL
