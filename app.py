@@ -58,7 +58,7 @@ st.markdown("""
 <div class="notice-bar">
 <span>
 
-⚠️ PROTOTYPE VERSION • This is the Prototype Edition of the Grid Hosting Capacity (GHC) Intelligence Engine...  For the full licensed institutional deployment and customization, please contact the National Energy AI Training Hub (NEAT-Hub), Department of Mechanical Engineering, Ahmadu Bello University, Zaria, or visit <b>www.neat-hub.abu.edu.ng/contact</b>.
+⚠️ PROTOTYPE VERSION • This is the Prototype Edition of the Grid Hosting Capacity (GHC) Intelligence Engine...  For the full licensed institutional deployment and customization, please contact the National Energy AI Training Hub (NEAT-Hub), Department of Mechanical Engineering, Ahmadu Bello University, Zaria, or visit www . neat-hub . abu . edu . ng/contact.
 
 </span>
 </div>
