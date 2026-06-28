@@ -30,48 +30,6 @@ st.markdown(
     """
     <style>
 
-    header[data-testid="stHeader"] {
-    display: none;
-    }
-
-    .block-container {
-    padding-top: 0rem;
-    }
-
-    [data-testid="stSidebar"] {
-    min-width: 650px;
-    max-width: 750px;
-    }
-
-    /* Hide hamburger menu */
-    #MainMenu {
-        visibility: hidden;
-    }
-
-    /* Hide footer */
-    footer {
-        visibility: hidden;
-    }
-
-    /* Hide header */
-    header {
-        visibility: hidden;
-    }
-
-    /* Hide top-right toolbar */
-    [data-testid="stToolbar"] {
-        display: none;
-    }
-
-    /* Hide deploy button */
-    [data-testid="stDecoration"] {
-        display: none;
-    }
-
-    
-
-
-
     .stApp {
         background-color: #081018;
     }
@@ -412,7 +370,7 @@ prediction = model.predict(X_input)[0]
 proba = model.predict_proba(X_input)[0]
 confidence = np.max(proba) * 100
 
-colR1, colR2 = st.columns([1,2])
+colR1, colR2 = st.columns([2,3])
 
 # =====================================================
 # LEFT PANEL
@@ -540,7 +498,6 @@ with colR1:
         use_container_width=True
     )
 
-
     
 
 # =====================================================
@@ -597,24 +554,6 @@ with colR2:
     except Exception as e:
         st.error("SHAP explanation could not be generated.")
         st.exception(e)
-
-
-#st.markdown("### AI Interpretation")
-
-if prediction == 0:
-    st.success(
-        "The network can SAFELY host the proposed DG under current operating conditions."
-    )
-
-elif prediction == 1:
-    st.warning(
-        "The network is approaching OPERATIONAL CONSTRAINTS and may require mitigation measures."
-    )
-
-else:
-    st.error(
-        "The proposed DG level may introduce SIGNIFICANT operational RISKS including overloads and reverse power flow."
-    )
 
 st.divider()
 # =====================================================
