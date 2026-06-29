@@ -245,7 +245,7 @@ def load_model():
     #with open("ghc_model_clean.pkl", "rb") as f:
         model = pickle.load(f)
 
-    with open("encoders_clean.pkl", "rb") as f:
+    with open(BASE_DIR / "encoders_clean.pkl", "rb") as f:
         encoders = pickle.load(f)
 
     return model, encoders
