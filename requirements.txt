@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.45.0
 pandas==2.2.3
 numpy==2.2.5
 scikit-learn==1.6.1
@@ -6,3 +6,4 @@ xgboost
 shap==0.47.2
 plotly==6.1.2
 matplotlib==3.10.1
+gunicorn
